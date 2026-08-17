@@ -1,0 +1,1010 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#07040b" />
+  <meta name="description" content="Gemnad Solutions — one connected creative-to-technology ecosystem for brand, web, search, content, production and AI-powered growth." />
+  <title>Gemnad Solutions — From Invisible to Unmissable</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <header class="nav" id="nav">
+    
+    <a href="#top" class="brand brand-with-logo" aria-label="Gemnad Solutions Home">
+      <img class="brand-full-logo" src="assets/gemnad-full-logo.png" alt="Gemnad Solutions logo">
+    </a>
+
+    <nav class="nav-links">
+      <a href="#ecosystem">Ecosystem</a>
+      <a href="#work">Work</a>
+      <a href="#growth">Growth System</a>
+      <a href="#about">About</a>
+    </nav>
+    <button type="button" class="btn project-trigger" data-project-open="true">
+              Start a project <span>↗</span>
+            </button>
+  </header>
+
+  <main id="top">
+
+    <section class="bulb-hero dark-section" id="bulbHero">
+      <div class="hero-grid bulb-grid"></div>
+      <div class="orb orb-a bulb-orb-a" data-speed="0.04"></div>
+      <div class="orb orb-b bulb-orb-b" data-speed="-0.03"></div>
+
+      <div class="bulb-hero-inner minimal-bulb-hero">
+        <div class="bulb-stage" id="bulbStage">
+          <div class="bulb-intro-message">
+            <span>Your Brand Deserves to Shine.</span>
+            <strong>Scroll to Light It Up.</strong>
+            <div class="bulb-intro-scroll-mark" aria-hidden="true">
+              <i></i>
+              <b></b>
+            </div>
+          </div>
+
+          <div class="bulb-glow"></div>
+          <div class="bulb-rings ring-one"></div>
+          <div class="bulb-rings ring-two"></div>
+
+          <div class="bulb-side-word bulb-word-left">Gemnad</div>
+          <div class="bulb-side-word bulb-word-right">Solutions</div>
+
+          <img class="bulb-image bulb-off-image" src="assets/bulb-off.png" alt="Bulb turned off">
+          <img class="bulb-image bulb-on-image" src="assets/bulb-on.png" alt="Bulb turned on">
+        </div>
+
+        <div class="bulb-scroll-note only-scroll-note">
+          <span></span>
+          SCROLL DOWN
+        </div>
+      </div>
+    </section>
+
+    <section class="hero dark-section second-hero">
+      <div class="hero-grid"></div>
+      <div class="orb orb-a" data-speed="0.08"></div>
+      <div class="orb orb-b" data-speed="-0.05"></div>
+
+      <div class="floating-words">
+        <span style="--x:7%;--y:20%" data-speed="0.07">BRAND</span>
+        <span style="--x:82%;--y:24%" data-speed="-0.06">WEB</span>
+        <span style="--x:9%;--y:74%" data-speed="-0.04">SEARCH</span>
+        <span style="--x:83%;--y:71%" data-speed="0.08">AI</span>
+        <span style="--x:64%;--y:13%" data-speed="0.04">CONTENT</span>
+        <span style="--x:66%;--y:85%" data-speed="-0.05">AUTOMATION</span>
+      </div>
+
+      <div class="hero-inner">
+        <p class="eyebrow reveal">GEMNAD SOLUTIONS / CREATIVE × TECHNOLOGY</p>
+        <div class="second-hero-main">
+          <h1 class="hero-title">
+            <span class="line reveal">RIGHT NOW,</span>
+            <span class="line reveal">SOMEONE IS SEARCHING</span>
+            <span class="line reveal">FOR A BUSINESS</span>
+            <span class="line reveal"><em>LIKE YOURS.</em></span>
+          </h1>
+
+          <div class="hero-search-demo reveal" aria-label="Animated search demonstration">
+            <div class="search-demo-label">
+              <span></span>
+              LIVE SEARCH
+            </div>
+
+            <div class="search-demo-box">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="11" cy="11" r="7"></circle>
+                <path d="m16.5 16.5 4 4"></path>
+              </svg>
+              <span id="heroSearchQuery"></span>
+              <i class="search-caret"></i>
+            </div>
+
+            <div class="search-demo-result" id="heroSearchResult">
+              <div class="search-result-icon">G</div>
+              <div>
+                <strong id="heroSearchTitle">Gemnad Solutions</strong>
+                <small id="heroSearchMeta">Creative × Technology</small>
+              </div>
+              <span class="search-found-tag">FOUND</span>
+            </div>
+
+            <div class="search-demo-status">
+              <i></i>
+              <span id="heroSearchStatus">Searching...</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-bottom reveal">
+          <p>We build connected digital systems that turn businesses from <strong>invisible</strong> into <strong>found.</strong></p>
+          <div class="hero-actions">
+            <a class="btn primary magnetic" href="#growth">Explore the system <span>↓</span></a>
+            <a class="btn ghost magnetic whatsapp-hero-btn" href="https://wa.me/94703366025" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20.52 3.48A11.78 11.78 0 0 0 12.07 0C5.5 0 .16 5.34.16 11.91c0 2.1.55 4.14 1.59 5.94L.06 24l6.29-1.65a11.9 11.9 0 0 0 5.7 1.45h.01c6.57 0 11.91-5.34 11.91-11.91 0-3.18-1.22-6.17-3.45-8.41ZM12.06 21.8h-.01a9.88 9.88 0 0 1-5.04-1.38l-.36-.21-3.73.98.99-3.64-.23-.37a9.86 9.86 0 0 1-1.52-5.27c0-5.46 4.44-9.9 9.91-9.9a9.84 9.84 0 0 1 7 2.9 9.84 9.84 0 0 1 2.9 7c-.01 5.46-4.45 9.89-9.91 9.89Zm5.43-7.41c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.04-.17-.3-.02-.46.13-.6.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.11 3.22 5.11 4.52.71.31 1.27.49 1.71.63.72.23 1.37.2 1.89.12.58-.09 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/>
+              </svg>
+              WhatsApp us <span>↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-note"><span></span> SCROLL TO BE FOUND</div>
+    </section>
+
+    <section class="word-transition dark-section" id="transition">
+      <div class="word-stage">
+        <div class="mega-word invisible-word">INVISIBLE</div>
+        <div class="mega-word found-word">FOUND.</div>
+      </div>
+    </section>
+
+    <section class="intro light-section" id="about">
+      <div class="section-label">01 / WHO WE ARE</div>
+      <div class="intro-grid">
+        <div class="intro-content">
+          <h2>ONE ECOSYSTEM.<br>FOUR CRAFTS.<br><span>ONE TEAM.</span></h2>
+          <div class="intro-copy intro-copy-under">
+            <p>Gemnad Solutions is a full-service creative-to-technology group. Production, design, digital media and technology live under one roof, working from the same brief.</p>
+            <p class="micro">One point of contact. One consistent standard. From the first shoot to long-term digital growth.</p>
+          </div>
+        </div>
+
+        <div class="intro-team-visual">
+          <div class="intro-team-glow"></div>
+          <img src="assets/team-about-blend.png" alt="Gemnad Solutions team">
+          <div class="intro-team-tag">CREATIVE × TECHNOLOGY</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ecosystem light-section" id="ecosystem">
+      <div class="section-head">
+        <div class="section-label">02 / THE ECOSYSTEM</div>
+        <h2>ENTER THROUGH ANY ONE.<br><span>WE CONNECT THE REST.</span></h2>
+      </div>
+
+      <div class="division-stack">
+        <article class="division-card digital">
+          <div class="division-no">01</div>
+          <div><p class="kicker">TECH</p><h3>GEMNAD DIGITAL</h3><p>Marketing, web & app development, AI, automation, SEO, AEO, cloud & IT consulting.</p></div>
+          <div class="division-icon">↗</div>
+        </article>
+        <article class="division-card gallery">
+          <div class="division-no">02</div>
+          <div><p class="kicker">GALLERY</p><h3>GEMNAD GALLERY</h3><p>Graphic design, branding, editing, motion graphics, printing, packaging and signage.</p></div>
+          <div class="division-icon">✦</div>
+        </article>
+        <article class="division-card studio">
+          <div class="division-no">03</div>
+          <div><p class="kicker">STUDIO</p><h3>GEMNAD STUDIO</h3><p>Photography, videography, studio & equipment rental, podcast recording and drone services.</p></div>
+          <div class="division-icon">◉</div>
+        </article>
+        <article class="division-card creators">
+          <div class="division-no">04</div>
+          <div><p class="kicker">CREATORS</p><h3>GEMNAD CREATORS</h3><p>YouTube & creator management, copyright & royalties, podcast and course management.</p></div>
+          <div class="division-icon">∞</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="growth dark-section" id="growth">
+      <div class="growth-sticky">
+        <div class="section-label light">03 / THE GEMNAD GROWTH SYSTEM</div>
+        <div class="growth-copy">
+          <h2>A CONNECTED JOURNEY.<br><span>NOT A LIST OF SERVICES.</span></h2>
+          <p>SCROLL THROUGH THE SYSTEM</p>
+        </div>
+
+        <div class="growth-visual">
+          <div class="growth-line"><i id="growthProgress"></i></div>
+          <div class="growth-node active" data-step="0"><b>01</b><strong>BUILD</strong><small>Brand + Web</small></div>
+          <div class="growth-node" data-step="1"><b>02</b><strong>CONNECT</strong><small>Local + Search</small></div>
+          <div class="growth-node" data-step="2"><b>03</b><strong>DISCOVER</strong><small>SEO + AEO</small></div>
+          <div class="growth-node" data-step="3"><b>04</b><strong>COMMUNICATE</strong><small>Content + Ads</small></div>
+          <div class="growth-node" data-step="4"><b>05</b><strong>AUTOMATE</strong><small>AI Workflows</small></div>
+          <div class="growth-node" data-step="5"><b>06</b><strong>IMPROVE</strong><small>Analytics</small></div>
+        </div>
+
+        <div class="growth-story" id="growthStory">
+          <span>01</span><h3>BUILD THE FOUNDATION.</h3>
+          <p>Brand identity, websites and digital infrastructure built to explain, build trust and guide customers toward action.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="web-showcase dark-section web-slider-section" id="web">
+      <div class="section-label light">04 / WEB</div>
+
+      <div class="web-layout">
+        <div class="web-copy">
+          <div class="big-statement">
+            <p>YOUR WEBSITE SHOULD</p>
+            <h2>DO MORE THAN EXIST.</h2>
+            <div class="rotating-copy">IT SHOULD BUILD <span id="rotatingWord">TRUST.</span></div>
+          </div>
+
+          <p class="web-intro">A good website should explain your business clearly, feel premium, and guide people toward action.</p>
+
+          <div class="web-feature-chips">
+            <span>Responsive</span>
+            <span>UI / UX</span>
+            <span>E-commerce</span>
+            <span>SEO Ready</span>
+            <span>Fast & Clean</span>
+          </div>
+
+          <p class="web-slider-note">You can replace the slider images with your own website samples later.</p>
+        </div>
+
+        <div class="web-slider-shell">
+          <div class="web-slider-window">
+            <div class="web-slides" id="webSlides">
+              <figure class="web-slide active">
+                <img src="assets/web-sample-gold.png" alt="Luxury gold ecommerce website design">
+                <figcaption>Luxury E-commerce Experience</figcaption>
+              </figure>
+              <figure class="web-slide">
+                <img src="assets/web-sample-education.png" alt="Education website design">
+                <figcaption>Education Platform Experience</figcaption>
+              </figure>
+              <figure class="web-slide">
+                <img src="assets/web-sample-lifestyle.png" alt="Lifestyle brand website design">
+                <figcaption>Lifestyle Brand Experience</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="web-slider-controls">
+            <div class="web-slider-dots">
+              <button class="web-dot active" data-slide="0" aria-label="Show slide 1"></button>
+              <button class="web-dot" data-slide="1" aria-label="Show slide 2"></button>
+              <button class="web-dot" data-slide="2" aria-label="Show slide 3"></button>
+            </div>
+            <span class="web-slider-caption">WEB SAMPLES</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="search-aeo-section light-section" id="search-aeo">
+      <div class="section-label">05 / SEARCH + AEO</div>
+
+      <div class="search-aeo-layout search-aeo-layout-refined">
+        <div class="search-aeo-left">
+          <div class="search-aeo-head search-aeo-head-centered-copy">
+            <h2>PEOPLE DON'T ONLY SEARCH.<br><span>THEY ASK.</span></h2>
+            <p class="search-aeo-subline">So your business should be easy to find in search engines and easy for AI tools to understand.</p>
+          </div>
+
+          <div class="search-aeo-copy search-aeo-copy-tight">
+            <article class="search-aeo-card">
+              <span>SEARCH</span>
+              <h3>Be visible</h3>
+              <p>Show up when people search for the product or service you offer.</p>
+            </article>
+
+            <article class="search-aeo-card">
+              <span>AEO</span>
+              <h3>Be understood</h3>
+              <p>Help AI platforms understand your business and present it as a useful answer.</p>
+            </article>
+
+            <article class="search-aeo-card">
+              <span>RESULT</span>
+              <h3>Be chosen</h3>
+              <p>More visibility creates more trust, more clicks and more inquiries.</p>
+            </article>
+          </div>
+
+          <div class="search-aeo-pill-row">
+            <span>Search Engines</span>
+            <span>AI Answers</span>
+            <span>Local Discovery</span>
+            <span>Trusted Signals</span>
+          </div>
+        </div>
+
+        <div class="search-aeo-visual search-aeo-visual-refined">
+          <div class="search-aeo-glow"></div>
+          <img src="assets/search-aeo-illustration.png" alt="Search and AEO concept illustration">
+        </div>
+      </div>
+    </section>
+
+<section class="work light-section" id="work">
+      <div class="work-sticky">
+        <div class="section-head work-head">
+          <div class="section-label">06 / SELECTED WORK</div>
+          <h2>OUR WORK<br><span>DOES THE TALKING.</span></h2>
+        </div>
+
+        <div class="work-rail-wrap">
+          <div class="work-rail">
+            <article class="project project-image-only"><img src="assets/selected-work-01.png" alt="Selected work sample 01"></article>
+            <article class="project project-image-only"><img src="assets/selected-work-02.png" alt="Selected work sample 02"></article>
+            <article class="project project-image-only"><img src="assets/selected-work-03.png" alt="Selected work sample 03"></article>
+            <article class="project project-image-only"><img src="assets/selected-work-04.png" alt="Selected work sample 04"></article>
+            <article class="project project-image-only"><img src="assets/selected-work-05.png" alt="Selected work sample 05"></article>
+            <article class="project project-image-only"><img src="assets/selected-work-06.png" alt="Selected work sample 06"></article>
+            <article class="project project-image-only"><img src="assets/selected-work-07.png" alt="Selected work sample 07"></article>
+            <article class="project project-image-only"><img src="assets/selected-work-08.png" alt="Selected work sample 08"></article>
+            <article class="project project-image-only"><img src="assets/selected-work-09.png" alt="Selected work sample 09"></article>
+            <article class="project project-image-only"><img src="assets/selected-work-10.png" alt="Selected work sample 10"></article>
+          </div>
+        </div>
+
+        <div class="work-progress">
+          <span>SCROLL TO EXPLORE</span>
+          <div class="work-progress-track"><i id="workProgress"></i></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="branding-section light-section branding-pdf-section" id="branding">
+      <div class="section-label">07 / BRANDING</div>
+
+      <div class="branding-head branding-head-left">
+        <div>
+          <p class="branding-kicker">BUILD OR STRENGTHEN</p>
+          <h2>THE <span>BRAND FOUNDATION.</span></h2>
+          <p class="branding-intro">For new brands, we create the identity. For existing brands, we refine consistency and positioning.</p>
+        </div>
+      </div>
+
+      <div class="branding-pdf-scroll-stage" id="brandingPdfStage">
+        <div class="branding-pdf-sticky">
+          <div class="branding-grid branding-grid-pdf">
+            <div class="branding-visual branding-pdf-visual">
+              <div class="branding-glow"></div>
+
+              <div class="branding-pdf-frame" id="brandingPdfFrame">
+                <div class="branding-pdf-track" id="brandingPdfTrack">
+                <img class="branding-pdf-page" src="assets/branding-pdf/page-01.png" alt="High Plus brand guideline page 1">
+                <img class="branding-pdf-page" src="assets/branding-pdf/page-02.png" alt="High Plus brand guideline page 2">
+                <img class="branding-pdf-page" src="assets/branding-pdf/page-03.png" alt="High Plus brand guideline page 3">
+                <img class="branding-pdf-page" src="assets/branding-pdf/page-04.png" alt="High Plus brand guideline page 4">
+                <img class="branding-pdf-page" src="assets/branding-pdf/page-05.png" alt="High Plus brand guideline page 5">
+                <img class="branding-pdf-page" src="assets/branding-pdf/page-06.png" alt="High Plus brand guideline page 6">
+                <img class="branding-pdf-page" src="assets/branding-pdf/page-07.png" alt="High Plus brand guideline page 7">
+                <img class="branding-pdf-page" src="assets/branding-pdf/page-08.png" alt="High Plus brand guideline page 8">
+                <img class="branding-pdf-page" src="assets/branding-pdf/page-09.png" alt="High Plus brand guideline page 9">
+                <img class="branding-pdf-page" src="assets/branding-pdf/page-10.png" alt="High Plus brand guideline page 10">
+                <img class="branding-pdf-page" src="assets/branding-pdf/page-11.png" alt="High Plus brand guideline page 11">
+                <img class="branding-pdf-page" src="assets/branding-pdf/page-12.png" alt="High Plus brand guideline page 12">
+                <img class="branding-pdf-page" src="assets/branding-pdf/page-13.png" alt="High Plus brand guideline page 13">
+                </div>
+
+                <div class="branding-pdf-ui">
+                  <span>BRAND GUIDELINE</span>
+                  <strong><b id="brandingPdfPage">01</b> / 13</strong>
+                </div>
+
+                <div class="branding-pdf-progress">
+                  <i id="brandingPdfProgress"></i>
+                </div>
+              </div>
+
+              <div class="branding-stamp">SCROLL TO EXPLORE THE BRAND SYSTEM</div>
+            </div>
+
+            <div class="branding-services">
+              <article class="branding-service">
+                <span>01</span>
+                <div>
+                  <h3>Brand Strategy</h3>
+                  <p>Positioning, audience, tone and message clarity.</p>
+                </div>
+              </article>
+
+              <article class="branding-service">
+                <span>02</span>
+                <div>
+                  <h3>Logo & Visual Identity</h3>
+                  <p>Logo systems, colors, typography and brand guidelines.</p>
+                </div>
+              </article>
+
+              <article class="branding-service">
+                <span>03</span>
+                <div>
+                  <h3>Business Stationery & Assets</h3>
+                  <p>Business cards, letterheads, email signatures, presentation templates and branded marketing materials.</p>
+                </div>
+              </article>
+
+              <blockquote>A strong brand reduces confusion before marketing even begins.</blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="studio-section dark-section studio-editorial">
+      <div class="studio-image"><img src="assets/studio-work-new.png" alt="Gemnad Studio production"></div>
+      <div class="studio-overlay"></div>
+      <div class="studio-content">
+        <div class="section-label light">08 / STUDIO</div>
+        <div class="studio-editorial-grid">
+          <div>
+            <p class="studio-kicker">FROM IDEA TO FINAL FRAME</p>
+            <h2>WE PRODUCE<br>CONTENT <span>PEOPLE NOTICE.</span></h2>
+          </div>
+          <div class="studio-side-copy">
+            <p>Photography, videography, product shoots, reels, editing and studio production built for brands that need content with real visual impact.</p>
+            <div class="service-chips"><span>Photography</span><span>Videography</span><span>Product Shoots</span><span>Reels</span><span>Editing</span><span>Studio Production</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="graphic-design-section light-section" id="graphic-design">
+      <div class="section-label">09 / GRAPHIC DESIGN</div>
+
+      <div class="graphic-design-head">
+        <div>
+          <p class="graphic-kicker">DIGITAL + PRINT</p>
+          <h2>DESIGN THAT<br><span>COMMUNICATES CLEARLY.</span></h2>
+        </div>
+        <p>Design is not limited to a logo. We create professional visuals for marketing, sales, print and daily business communication.</p>
+      </div>
+
+      <div class="graphic-design-grid">
+        <article class="graphic-design-card">
+          <span>01</span>
+          <h3>Digital Design</h3>
+          <p>Social media posts, ad creatives, web banners, thumbnails and campaign visuals.</p>
+        </article>
+        <article class="graphic-design-card featured">
+          <span>02</span>
+          <h3>Print Design</h3>
+          <p>Flyers, brochures, catalogues, business cards, posters, signage layouts and packaging support.</p>
+        </article>
+        <article class="graphic-design-card">
+          <span>03</span>
+          <h3>Corporate Materials</h3>
+          <p>Company profiles, proposals, presentations, document templates and branded stationery.</p>
+        </article>
+      </div>
+
+      <div class="graphic-design-visual">
+        <img src="assets/graphic-design-portfolio.webp" alt="Gemnad graphic design portfolio">
+        <div class="graphic-design-caption">EVERY DESIGN SHOULD LOOK PROFESSIONAL, COMMUNICATE CLEARLY AND SUPPORT BUSINESS GOALS.</div>
+      </div>
+    </section>
+
+    <section class="automation dark-section automation-lab">
+      <div class="section-label light">10 / AI + AUTOMATION</div>
+      <div class="automation-grid automation-lab-grid">
+        <div class="automation-copy">
+          <p class="automation-kicker">PRACTICAL AI, NOT HYPE</p>
+          <h2>LESS REPETITION.<br><span>MORE GROWTH.</span></h2>
+          <p>We apply AI where it creates practical business value — not where it simply looks trendy.</p>
+        </div>
+        <div class="workflow automation-console automation-console-live">
+          <div class="console-header">
+            <span>LIVE WORKFLOW</span>
+            <div class="live-indicator"><b></b>ACTIVE</div>
+          </div>
+
+          <div class="ai-flow-canvas">
+            <svg class="ai-flow-lines" viewBox="0 0 720 380" preserveAspectRatio="none" aria-hidden="true">
+              <path class="ai-path path-a" d="M105 80 C210 80, 205 80, 310 80"></path>
+              <path class="ai-path path-b" d="M410 80 C520 80, 510 190, 610 190"></path>
+              <path class="ai-path path-c" d="M610 220 C510 220, 515 315, 410 315"></path>
+              <path class="ai-path path-d" d="M310 315 C205 315, 210 315, 105 315"></path>
+
+              <circle class="ai-signal signal-a" r="5">
+                <animateMotion dur="2.3s" repeatCount="indefinite" path="M105 80 C210 80, 205 80, 310 80"></animateMotion>
+              </circle>
+              <circle class="ai-signal signal-b" r="5">
+                <animateMotion dur="2.8s" begin=".5s" repeatCount="indefinite" path="M410 80 C520 80, 510 190, 610 190"></animateMotion>
+              </circle>
+              <circle class="ai-signal signal-c" r="5">
+                <animateMotion dur="2.6s" begin="1s" repeatCount="indefinite" path="M610 220 C510 220, 515 315, 410 315"></animateMotion>
+              </circle>
+              <circle class="ai-signal signal-d" r="5">
+                <animateMotion dur="2.4s" begin="1.4s" repeatCount="indefinite" path="M310 315 C205 315, 210 315, 105 315"></animateMotion>
+              </circle>
+            </svg>
+
+            <div class="ai-node node-lead">
+              <small>01</small>
+              <strong>NEW LEAD</strong>
+              <span>Captured</span>
+            </div>
+
+            <div class="ai-node node-agent primary">
+              <small>02</small>
+              <strong>AI AGENT</strong>
+              <span>Responding</span>
+              <i class="node-pulse"></i>
+            </div>
+
+            <div class="ai-node node-qualify">
+              <small>03</small>
+              <strong>QUALIFY</strong>
+              <span>Scoring</span>
+            </div>
+
+            <div class="ai-node node-book">
+              <small>04</small>
+              <strong>BOOK</strong>
+              <span>Appointment</span>
+            </div>
+
+            <div class="ai-node node-follow">
+              <small>05</small>
+              <strong>FOLLOW-UP</strong>
+              <span>Automated</span>
+            </div>
+
+            <div class="ai-node node-report">
+              <small>06</small>
+              <strong>REPORT</strong>
+              <span>Updated</span>
+            </div>
+          </div>
+
+          <div class="automation-live-feed">
+            <span><i></i> Lead captured</span>
+            <span><i></i> AI response sent</span>
+            <span><i></i> CRM updated</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="social-management light-section social-solid-section" id="social-media">
+      <div class="section-label">11 / SOCIAL MEDIA MANAGEMENT</div>
+
+      <div class="social-management-head">
+        <div>
+          <p class="social-kicker">NOT RANDOM POSTING.</p>
+          <h2>SOCIAL MEDIA SHOULD<br><span>BUILD BUSINESS.</span></h2>
+        </div>
+        <p>We manage social media as a complete system — strategy, content, posting, engagement and improvement.</p>
+      </div>
+
+      <div class="social-pill-grid">
+        <span>Audience Research</span>
+        <span>Content Strategy</span>
+        <span>Platform Planning</span>
+        <span>Post Scheduling</span>
+        <span>Engagement Management</span>
+        <span>Monthly Reporting</span>
+      </div>
+
+      <div class="social-solid-visual">
+        <img src="assets/social-media-banner.png" alt="Social media evolution and digital communication">
+      </div>
+    </section>
+
+    <section class="creators-section dark-section" id="creators">
+      <div class="creators-bg-grid"></div>
+      <div class="section-label light">12 / GEMNAD CREATORS</div>
+
+      <div class="creators-hero">
+        <div>
+          <p class="creators-kicker">CREATOR + TALENT MANAGEMENT</p>
+          <h2>WE MANAGE THE <span>PERSON</span><br>BEHIND THE PLATFORM.</h2>
+        </div>
+        <p class="creators-intro">Gemnad Creators is our talent and creator management division built for artists, influencers and public figures who need more than content. From copyright and royalties to brand deals and fanbase growth, we handle the business side so the creative side stays focused.</p>
+      </div>
+
+      <div class="creators-system">
+        <div class="creators-visual-orbit" aria-hidden="true">
+          <div class="creator-core">G</div>
+          <span class="orbit-node node-a">SOCIAL</span>
+          <span class="orbit-node node-b">BRAND</span>
+          <span class="orbit-node node-c">COMMUNITY</span>
+          <span class="orbit-node node-d">RIGHTS</span>
+          <span class="orbit-node node-e">PR</span>
+          <span class="orbit-node node-f">PARTNERSHIPS</span>
+        </div>
+
+        <div class="creators-service-list">
+          <div><b>01</b><span>Creator Social Media Management</span></div>
+          <div><b>02</b><span>Personal Branding</span></div>
+          <div><b>03</b><span>Community Management</span></div>
+          <div><b>04</b><span>Brand Partnerships</span></div>
+          <div><b>05</b><span>Distribution & Record Label</span></div>
+          <div><b>06</b><span>Copyright Management</span></div>
+          <div><b>07</b><span>PR</span></div>
+          <div><b>08</b><span>Creator Build-up</span></div>
+          <div><b>09</b><span>Artist Management</span></div>
+        </div>
+      </div>
+<div class="creators-roster-head">
+        <div>
+          <p class="creators-kicker">TALENT ROSTER</p>
+          <h2>WORKING WITH SRI LANKA'S<br><span>TOP ARTISTS AND CREATORS.</span></h2>
+        </div>
+        <p>Alongside brand clients, Gemnad Creators partners directly with musicians, performers and public figures at a celebrity level, managing their public image, partnerships and growth as a full-time operation.</p>
+      </div>
+
+      
+      <div class="creators-roster-slider">
+        <div class="creators-roster-track">
+<article class="creator-card">
+          <div class="creator-photo"><img src="assets/creators/creator-01.jpg" alt="Evo Beats">
+
+<article class="creator-card">
+          <div class="creator-photo"><img src="assets/creators/creator-01.jpg" alt="Evo Beats">
+        </div>
+      </div>
+
+          <h3>Evo Beats</h3>
+        </article>
+        <article class="creator-card">
+          <div class="creator-photo"><img src="assets/creators/creator-02.jpg" alt="Invisible Chef"></div>
+          <h3>Invisible Chef</h3>
+        </article>
+        <article class="creator-card">
+          <div class="creator-photo"><img src="assets/creators/creator-03.jpg" alt="Beat Drummers"></div>
+          <h3>Beat Drummers</h3>
+        </article>
+        <article class="creator-card">
+          <div class="creator-photo"><img src="assets/creators/creator-04.jpg" alt="Shenal Nishshanka"></div>
+          <h3>Shenal Nishshanka</h3>
+        </article>
+        <article class="creator-card">
+          <div class="creator-photo"><img src="assets/creators/creator-05.jpg" alt="Vishwa Prabath"></div>
+          <h3>Vishwa Prabath</h3>
+        </article>
+        <article class="creator-card">
+          <div class="creator-photo"><img src="assets/creators/creator-06.jpg" alt="Thiwanka Dilshan"></div>
+          <h3>Thiwanka Dilshan</h3>
+        </article>
+        <article class="creator-card">
+          <div class="creator-photo"><img src="assets/creators/creator-07.jpg" alt="Thrimana Entertainment"></div>
+          <h3>Thrimana Entertainment</h3>
+        </article>
+        <article class="creator-card">
+          <div class="creator-photo"><img src="assets/creators/creator-08.jpg" alt="Sanjaya Muramudali"></div>
+          <h3>Sanjaya Muramudali</h3>
+        </article>
+        <article class="creator-card">
+          <div class="creator-photo"><img src="assets/creators/creator-09.jpg" alt="Apoorwa Ashawari"></div>
+          <h3>Apoorwa Ashawari</h3>
+        </article>
+        <article class="creator-card">
+          <div class="creator-photo"><img src="assets/creators/creator-10.jpg" alt="Pramuk Elica"></div>
+          <h3>Pramuk Elica</h3>
+        </article>
+        <article class="creator-card">
+          <div class="creator-photo"><img src="assets/creators/creator-11.jpg" alt="Sachindu"></div>
+          <h3>Sachindu</h3>
+        </article>
+        <article class="creator-card">
+          <div class="creator-photo"><img src="assets/creators/creator-12.jpg" alt="Ranuka Colambaarachchi"></div>
+          <h3>Ranuka Colambaarachchi</h3>
+        </article>
+      </div>
+    </section>
+
+    <section class="trust light-section">
+      <div class="section-label">13 / TRUST</div>
+      <h2>TRUSTED BY<br><span>BRANDS WE'VE WORKED WITH.</span></h2>
+      <div class="logo-marquee"><div class="marquee-track">
+        <span>JUNIOR GEORGE</span><span>FOURCLE</span><span>HOTEL ELAINE</span><span>BROWNS</span><span>NATA</span><span>FIVERR</span><span>OMNTA</span>
+        <span>JUNIOR GEORGE</span><span>FOURCLE</span><span>HOTEL ELAINE</span><span>BROWNS</span><span>NATA</span><span>FIVERR</span><span>OMNTA</span>
+      </div></div>
+      <div class="clients-preview"><img src="assets/trust-logos-collage.jpg" alt="Brands Gemnad has worked with"></div>
+    </section>
+
+    <section class="team-modern dark-section" id="team">
+      <div class="team-modern-bg"></div>
+      <div class="section-label light">14 / TEAM</div>
+
+      <div class="team-modern-head">
+        <h2>FIVE PEOPLE.<br><span>ONE CONNECTED TEAM.</span></h2>
+        <p>Leadership across creativity, marketing, operations, AI content and production — working together from the same brief.</p>
+      </div>
+
+      <div class="team-member-grid">
+
+        <article class="team-member-card">
+          <div class="team-member-index">01</div>
+          <div class="team-member-avatar">
+            <img src="assets/team-nadeesha.png" alt="Mrs. Nadeesha Piyumali">
+          </div>
+          <div class="team-member-info">
+            <h3>Mrs. Nadeesha Piyumali</h3>
+            <p>Creative Director</p>
+          </div>
+        </article>
+
+
+        <article class="team-member-card offset-up">
+          <div class="team-member-index">02</div>
+          <div class="team-member-avatar">
+            <img src="assets/team-thisara.png" alt="Mr. Thisara Areayarthne">
+          </div>
+          <div class="team-member-info">
+            <h3>Mr. Thisara Areayarthne</h3>
+            <p>Digital Marketing & Growth Manager</p>
+          </div>
+        </article>
+
+
+        <article class="team-member-card">
+          <div class="team-member-index">03</div>
+          <div class="team-member-avatar">
+            <img src="assets/team-roshan.png" alt="Mr. Roshan Rasnayaka">
+          </div>
+          <div class="team-member-info">
+            <h3>Mr. Roshan Rasnayaka</h3>
+            <p>Founder / CEO</p>
+          </div>
+        </article>
+
+
+        <article class="team-member-card offset-up">
+          <div class="team-member-index">04</div>
+          <div class="team-member-avatar">
+            <img src="assets/team-rusiru.png" alt="Mr. Rusiru Dilshan">
+          </div>
+          <div class="team-member-info">
+            <h3>Mr. Rusiru Dilshan</h3>
+            <p>Chief Operation Manager</p>
+          </div>
+        </article>
+
+
+        <article class="team-member-card">
+          <div class="team-member-index">05</div>
+          <div class="team-member-avatar">
+            <img src="assets/team-minudi.png" alt="Ms. Minudi Ahasna">
+          </div>
+          <div class="team-member-info">
+            <h3>Ms. Minudi Ahasna</h3>
+            <p>AI Content & Video Production Lead</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="team-modern-foot">DIFFERENT DISCIPLINES. SAME BRIEF.</div>
+    </section>
+
+<section class="contact light-section" id="contact">
+      <div class="contact-inner">
+        <p class="eyebrow">READY?</p>
+        <h2>SOMEONE IS<br>SEARCHING<br><span>RIGHT NOW.</span></h2>
+        <div class="question">WILL THEY FIND YOU?</div>
+        <button type="button" class="contact-btn magnetic project-trigger-bottom" data-project-open="true">
+          <span>START A PROJECT</span><b>↗</b>
+        </button>
+<p class="typed">Let's make sure they do<span class="caret">|</span></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">GEMNAD.</div>
+    <div class="footer-grid">
+      <div><p>CREATIVE × TECHNOLOGY</p><span>One connected system for digital growth.</span></div>
+      <div><a href="#ecosystem">Ecosystem</a><a href="#growth">Growth System</a><a href="#work">Work</a></div>
+      <div><a href="#about">About</a><a href="#contact">Contact</a><a href="https://www.gemnad.online">gemnad.online ↗</a></div>
+    </div>
+    <div class="footer-bottom"><span>GEMNAD SOLUTIONS (PVT) LTD</span><span>© 2026</span></div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+
+    <a class="whatsapp-float" href="https://wa.me/94703366025" target="_blank" rel="noopener noreferrer" aria-label="Chat with Gemnad Solutions on WhatsApp">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M20.52 3.48A11.78 11.78 0 0 0 12.07 0C5.5 0 .16 5.34.16 11.91c0 2.1.55 4.14 1.59 5.94L.06 24l6.29-1.65a11.9 11.9 0 0 0 5.7 1.45h.01c6.57 0 11.91-5.34 11.91-11.91 0-3.18-1.22-6.17-3.45-8.41ZM12.06 21.8h-.01a9.88 9.88 0 0 1-5.04-1.38l-.36-.21-3.73.98.99-3.64-.23-.37a9.86 9.86 0 0 1-1.52-5.27c0-5.46 4.44-9.9 9.91-9.9a9.84 9.84 0 0 1 7 2.9 9.84 9.84 0 0 1 2.9 7c-.01 5.46-4.45 9.89-9.91 9.89Zm5.43-7.41c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.04-.17-.3-.02-.46.13-.6.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.11 3.22 5.11 4.52.71.31 1.27.49 1.71.63.72.23 1.37.2 1.89.12.58-.09 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/>
+      </svg>
+      <span>WhatsApp</span>
+    </a>
+
+  
+  
+  <div class="success-modal" id="successModal" aria-hidden="true">
+    <div class="success-backdrop"></div>
+    <div class="success-card" role="status" aria-live="polite">
+      <div class="success-icon-wrap">
+        <div class="success-ring ring-a"></div>
+        <div class="success-ring ring-b"></div>
+        <div class="success-check">
+          <svg viewBox="0 0 52 52" aria-hidden="true">
+            <path d="M14 27.5 22 35 39 17"></path>
+          </svg>
+        </div>
+      </div>
+      <p class="success-kicker">MESSAGE SENT</p>
+      <h3>Thank you.</h3>
+      <p>Your project inquiry has been sent to Gemnad Solutions. We’ll get back to you as soon as possible.</p>
+      <button type="button" class="success-close" id="successClose">Done</button>
+    </div>
+  </div>
+
+  <div class="project-modal" id="projectModal" aria-hidden="true">
+    <div class="project-modal-backdrop" data-project-close="true"></div>
+    <div class="project-modal-panel" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle">
+      <button class="project-modal-close" type="button" aria-label="Close form" data-project-close="true">×</button>
+      <div class="project-modal-head">
+        <p class="project-modal-kicker">START A PROJECT</p>
+        <h2 id="projectModalTitle">Let’s build something powerful.</h2>
+        <p>Share your details and we’ll send your project inquiry directly to Gemnad Solutions.</p>
+      </div>
+
+      <form class="project-form" id="projectForm">
+        <input type="hidden" name="to_email" value="gemnadsolutions@gmail.com">
+        <input type="hidden" name="subject" value="New Project Inquiry - Gemnad Solutions">
+        <div class="project-grid">
+          <label>
+            <span>Name</span>
+            <input type="text" name="from_name" placeholder="Your name" required>
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="reply_to" placeholder="you@example.com" required>
+          </label>
+          <label>
+            <span>Phone number</span>
+            <input type="tel" name="phone" placeholder="+94 77 123 4567" required>
+          </label>
+          <label class="project-full">
+            <span>Message</span>
+            <textarea name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+          </label>
+        </div>
+
+        <div class="project-form-actions">
+          <button type="submit" class="btn project-send-btn">
+            <span>Send message</span>
+            <b>↗</b>
+          </button>
+        </div>
+        <p class="form-status" id="projectFormStatus" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+
+  
+  <script>
+    (function(){
+      const EMAILJS_CONFIG = {
+        serviceID: 'YOUR_EMAILJS_SERVICE_ID',
+        templateID: 'YOUR_EMAILJS_TEMPLATE_ID',
+        publicKey: 'YOUR_EMAILJS_PUBLIC_KEY'
+      };
+
+      const modal = document.getElementById('projectModal');
+      const form = document.getElementById('projectForm');
+      const status = document.getElementById('projectFormStatus');
+      const openBtns = document.querySelectorAll('[data-project-open="true"]');
+      const successModal = document.getElementById('successModal');
+      const successClose = document.getElementById('successClose');
+
+      const configured = () => {
+        return !Object.values(EMAILJS_CONFIG).some(v => v.startsWith('YOUR_EMAILJS_'));
+      };
+
+      const setStatus = (message, type) => {
+        if(!status) return;
+        status.textContent = message || '';
+        status.className = 'form-status' + (type ? ' ' + type : '');
+      };
+
+      const closeProjectModal = () => {
+        if(!modal) return;
+        modal.classList.remove('is-open');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('project-modal-active');
+      };
+
+      const openProjectModal = () => {
+        if(!modal) return;
+        modal.classList.add('is-open');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('project-modal-active');
+        setStatus('', '');
+        setTimeout(() => {
+          const firstInput = form ? form.querySelector('input:not([type="hidden"])') : null;
+          if(firstInput) firstInput.focus();
+        }, 250);
+      };
+
+      const openSuccess = () => {
+        if(!successModal) return;
+        successModal.classList.add('is-open');
+        successModal.setAttribute('aria-hidden', 'false');
+      };
+
+      const closeSuccess = () => {
+        if(!successModal) return;
+        successModal.classList.remove('is-open');
+        successModal.setAttribute('aria-hidden', 'true');
+      };
+
+      openBtns.forEach(btn => btn.addEventListener('click', openProjectModal));
+
+      if(modal){
+        modal.querySelectorAll('[data-project-close="true"]').forEach(el => {
+          el.addEventListener('click', closeProjectModal);
+        });
+      }
+
+      if(successClose) successClose.addEventListener('click', closeSuccess);
+      if(successModal){
+        successModal.querySelector('.success-backdrop')?.addEventListener('click', closeSuccess);
+      }
+
+      document.addEventListener('keydown', (e) => {
+        if(e.key === 'Escape'){
+          if(successModal?.classList.contains('is-open')) closeSuccess();
+          else if(modal?.classList.contains('is-open')) closeProjectModal();
+        }
+      });
+
+      if(window.emailjs && configured()){
+        emailjs.init({
+          publicKey: EMAILJS_CONFIG.publicKey
+        });
+      }
+
+      if(form){
+        form.addEventListener('submit', async function(e){
+          e.preventDefault();
+
+          const submitBtn = form.querySelector('button[type="submit"]');
+          const originalHTML = submitBtn ? submitBtn.innerHTML : '';
+
+          if(!configured()){
+            setStatus('EmailJS is ready, but the Service ID, Template ID and Public Key still need to be added.', 'error');
+            return;
+          }
+
+          try{
+            if(submitBtn){
+              submitBtn.disabled = true;
+              submitBtn.innerHTML = '<span>Sending...</span><b class="send-spinner"></b>';
+            }
+            setStatus('Sending your message...', 'sending');
+
+            await emailjs.sendForm(
+              EMAILJS_CONFIG.serviceID,
+              EMAILJS_CONFIG.templateID,
+              form,
+              { publicKey: EMAILJS_CONFIG.publicKey }
+            );
+
+            form.reset();
+            setStatus('', '');
+            closeProjectModal();
+
+            setTimeout(() => {
+              openSuccess();
+            }, 180);
+
+          }catch(error){
+            console.error('EmailJS error:', error);
+            setStatus('Could not send the message. Please try again.', 'error');
+          }finally{
+            if(submitBtn){
+              submitBtn.disabled = false;
+              submitBtn.innerHTML = originalHTML;
+            }
+          }
+        });
+      }
+    })();
+  </script>
+</body>
+
+</html>

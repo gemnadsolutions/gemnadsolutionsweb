@@ -1,0 +1,29 @@
+GEMNAD SOLUTIONS - EMAILJS SETUP
+
+The website is already integrated with EmailJS Browser SDK v4.
+
+You only need to replace these three values inside index.html:
+
+serviceID: 'YOUR_EMAILJS_SERVICE_ID'
+templateID: 'YOUR_EMAILJS_TEMPLATE_ID'
+publicKey: 'YOUR_EMAILJS_PUBLIC_KEY'
+
+Recommended template variables:
+{{from_name}}
+{{reply_to}}
+{{phone}}
+{{message}}
+{{to_email}}
+{{subject}}
+
+Set the EmailJS template recipient / To Email to:
+gemnadsolutions@gmail.com
+
+After you replace the 3 values, both:
+- Top navigation "Start a project"
+- Bottom READY section "Start a project"
+
+open the SAME popup form and send through EmailJS.
+
+The form is NOT displayed directly inside the READY section anymore.
+A thank-you animation appears only after EmailJS reports a successful send.
